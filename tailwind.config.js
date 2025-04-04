@@ -34,6 +34,15 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+        keyframes: {
+          ring: {
+            '0%, 100%': { transform: 'rotate(-10deg)' },
+            '50%': { transform: 'rotate(10deg)' },
+          },
+        },
+        animation: {
+          ring: 'ring 0.5s ease-in-out infinite',
+        },
       colors: {
         current: "currentColor",
         transparent: "transparent",

@@ -1,38 +1,73 @@
-import Link from "next/link";
+
+import Image from "next/image";
+import { FaCheckSquare } from "react-icons/fa";
+import { SlCalender } from "react-icons/sl";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pb-1 pt-[120px] dark:bg-gray-dark md:pb-[60px] md:pt-[150px] xl:pb-[40px] xl:pt-[180px] 2xl:pb-[50px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+            <div className="w-full px-4 flex flex-row  justify-start items-start lg:items-center">
+              <div className="lg:pl-20 w-[70%] text-center mt-10 md:mt-5">
+                <h1 className="mb-5  font-bold leading-tight text-black dark:text-transparent bg-clip-text bg-gradient-to-r from-[rgba(230,151,57,1)] from-[39%] to-[rgba(255,255,255,1)] sm:text-2xl sm:leading-tight md:text-3xl xl:text-5xl md:leading-tight">
+                  DELTA PLUMBERS EXPERT PLUMBING SERVICES
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                <p className="mb-12 text-xs !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl"> Delta Plumbers is a full-service plumbing company offering residential and commercial plumbing services throughout the Canada.</p>
+                <ul className="hidden md:grid  mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl  grid-cols-3">
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Up Front Pricing</li></div>
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Locally Owned</li></div>
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Guaranteed Repairs</li></div>
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">On-Time Guarantee</li></div>
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2 ">Free Estimates</li></div>
+                  <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Professional Services</li></div>
+                </ul>
+                <div className="hidden md:flex flex-row items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  <div
+                    className="items-center gap-2 flex flex-row rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    <SlCalender />
+                    <p className="font-bold italic">Schedule Service</p>
+                  </div>
+                  <div
+                    className="items-center gap-2 flex flex-row rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Star on GitHub
-                  </Link>
+                    <BsFillTelephoneFill className="animate-ring" />
+                    <p className="font-bold italic">(888) 925-1996</p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative pl-10">
+                <Image alt="plumber" width={269} height={512} src={"/images/plumber/plumber.png"}></Image>
+              </div>
+
+            </div>
+            <div className="px-2 md:hidden mt-5 w-full">
+              <ul className="mb-12 text-sm !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl grid grid-cols-2 md:grid-cols-3">
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Up Front Pricing</li></div>
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Locally Owned</li></div>
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Guaranteed Repairs</li></div>
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">On-Time Guarantee</li></div>
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2 ">Free Estimates</li></div>
+                <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Professional Services</li></div>
+              </ul>
+              <div className="z-50 fixed w-[100vw] bg-black dark:bg-white   gap-1 bottom-0 h-20 left-0  flex md:hidden flex-row justify-center items-center ">
+                <div
+                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                >
+                  <SlCalender />
+                  <p className="font-bold italic ">Schedule Service</p>
+                </div>
+                <div
+                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                >
+                  <BsFillTelephoneFill className="animate-ring" />
+                  <p className="font-bold italic ">(888) 925-1996</p>
                 </div>
               </div>
             </div>

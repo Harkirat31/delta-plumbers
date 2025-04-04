@@ -41,10 +41,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
+        className={`header left-0 top-0 z-40 flex w-full items-center dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky bg-white   ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            ? "fixed z-[9999] !bg-opacity-80 backdrop-blur-sm transition"
+            : "absolute bg-transparent "
         }`}
       >
         <div className="container">
@@ -53,25 +53,29 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-2 lg:py-2" : "py-2"
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/logo.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
                 />
               </Link>
+
+
+
             </div>
+            
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
@@ -159,17 +163,17 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
+                {/* <Link
+                  href="/"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
-                  Sign In
-                </Link>
+                
+                </Link> */}
                 <Link
-                  href="/signup"
+                  href="/"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Sign Up
+                  Request Service
                 </Link>
                 <div>
                   <ThemeToggler />
