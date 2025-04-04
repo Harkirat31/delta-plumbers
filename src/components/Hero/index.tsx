@@ -29,13 +29,13 @@ const Hero = () => {
                 </ul>
                 <div className="hidden md:flex flex-row items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <div
-                    className="items-center gap-2 flex flex-row rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    className="items-center gap-2 flex flex-row rounded-sm bg-red-600 font-bold px-8 py-4 text-base  text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     <SlCalender />
                     <p className="font-bold italic">Schedule Service</p>
                   </div>
                   <div
-                    className="items-center gap-2 flex flex-row rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    className="items-center gap-2 flex flex-row rounded-sm bg-red-600 font-bold px-8 py-4 text-base  text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     <BsFillTelephoneFill className="animate-ring" />
                     <p className="font-bold italic">(888) 925-1996</p>
@@ -58,13 +58,13 @@ const Hero = () => {
               </ul>
               <div className="fixed w-[100vw]  dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky bg-white  z-50 !bg-opacity-80 backdrop-blur-sm transition  gap-1 bottom-0 h-20 left-0  flex md:hidden flex-row justify-center items-center ">
                 <div
-                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-red-600 px-2 py-4 text-sm font-bold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   <SlCalender />
                   <p className="font-bold italic ">Schedule Service</p>
                 </div>
                 <div
-                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-bold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   <BsFillTelephoneFill className="animate-ring" />
                   <p className="font-bold italic ">(888) 925-1996</p>
