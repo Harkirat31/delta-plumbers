@@ -64,7 +64,7 @@ const Hero = () => {
                   <p className="font-bold italic ">Schedule Service</p>
                 </div>
                 <div
-                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-bold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-red-600 px-2 py-4 text-sm font-bold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   <BsFillTelephoneFill className="animate-ring" />
                   <p className="font-bold italic ">(888) 925-1996</p>
