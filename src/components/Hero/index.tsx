@@ -56,7 +56,7 @@ const Hero = () => {
                 <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2 ">Free Estimates</li></div>
                 <div className="flex flex-row items-center"> <FaCheckSquare className="text-[#242A4E] dark:text-[#E8993D]"></FaCheckSquare> <li className="ml-2">Professional Services</li></div>
               </ul>
-              <div className="z-50 fixed w-[100vw] bg-black dark:bg-white   gap-1 bottom-0 h-20 left-0  flex md:hidden flex-row justify-center items-center ">
+              <div className="fixed w-[100vw]  dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky bg-white  z-50 !bg-opacity-80 backdrop-blur-sm transition  gap-1 bottom-0 h-20 left-0  flex md:hidden flex-row justify-center items-center ">
                 <div
                   className="w-[45%] items-center gap-1 flex flex-row rounded-sm bg-primary px-2 py-4 text-sm font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
